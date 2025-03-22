@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Alexandria:wght@100..900&family=Cairo:wght@200..1000&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  font-family: "Alexandria", sans-serif;
+  direction: rtl;
+  background-color: #f4f4f4;
+  line-height: 1.6;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#headText {
+  font-size: 1.3em;
+  font-weight: bold;
+  margin: 10px;
+  text-align: center;
+}
+
+#container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.question {
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  color: #ebebeb;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  font-size: 2em;
+}
+
+.question:hover {
+  transform: scale(1.1);
+}
+
+#q1 {
+  background-color: #ff0000;
+}
+#q2 {
+  background-color: #0000ff;
+}
+
+img {
+  width: 300px;
+  border-radius: 10px;
+  margin: 30px 20px 0 20px;
+}
+
+@keyframes fade-out {
+  0% {
+    opacity: 1;
+    visibility: visible;
+  }
+  100% {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    visibility: hidden;
+  }
+  100% {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+img {
+  animation: fade-in 1s forwards;
+}
+
+@media (max-width: 600px) {
+}
